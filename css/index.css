@@ -149,10 +149,21 @@ body {
   padding: 2% 10% 2% 10%;
   font-family: Trebuchet MS;
 }
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
 .navigation img {
   display: flex;
   flex-wrap: wrap;
   max-width: 20%;
+}
+@media (max-width: 500px) {
+  .navigation img {
+    flex-direction: column;
+    max-width: 400px;
+  }
 }
 .navigation nav {
   display: flex;
@@ -161,6 +172,11 @@ body {
   padding: 10px;
   background-color: white;
   color: grey;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    justify-content: center;
+  }
 }
 .navigation nav:hover {
   background-color: grey;
@@ -175,8 +191,6 @@ body {
 @media (max-width: 500px) {
   .main {
     flex-direction: column;
-    background-color: black;
-    width: 10%;
   }
 }
 .main .headerimage {
@@ -258,6 +272,11 @@ body {
   padding-left: 3%;
   padding-right: 10%;
   height: 150px;
+}
+@media (max-width: 500px) {
+  .experience {
+    flex-direction: column;
+  }
 }
 .experience div {
   min-width: 200px;

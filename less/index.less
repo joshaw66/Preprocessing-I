@@ -78,7 +78,7 @@ html, body {
 	font-family: Trebuchet MS;
 
 	@media (max-width: 500px){
-
+		flex-direction: column;
 	}
 	
 
@@ -86,6 +86,11 @@ html, body {
 		display: flex;
 		flex-wrap: wrap;
 		max-width: 20%;
+
+		@media (max-width: 500px){
+			flex-direction: column;
+			max-width: 400px;
+		}
 	}
 
 	nav {
@@ -95,6 +100,10 @@ html, body {
 		padding: 10px;
 		background-color: white;
 		color: grey;
+
+		@media (max-width: 500px){
+			justify-content: center;
+		}
 	}
 
 	nav:hover {
@@ -111,9 +120,6 @@ html, body {
 
 	@media (max-width: 500px){
 		flex-direction: column;
-		background-color: black;
-		width: 10%;
-
 	}
 
 	.headerimage {
@@ -160,7 +166,7 @@ html, body {
 			}
 		}
 }
-.middlesection{
+.middlesection {
 	display: flex;
 	flex-direction: row;
 	height: 400px;
@@ -212,6 +218,10 @@ html, body {
 	padding-left: 3%;
 	padding-right: 10%;
 	height: 150px;
+
+	@media (max-width: 500px){
+		flex-direction: column;
+	}
 	
 	div {
 		min-width: 200px;
@@ -226,6 +236,3 @@ html, body {
 		overflow: hidden;
 	}
 }
-
-
-

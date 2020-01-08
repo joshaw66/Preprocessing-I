@@ -126,6 +126,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+h1 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 18.72px;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -154,4 +160,32 @@ body {
 .navigation nav:hover {
   background-color: grey;
   color: white;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  padding: 2%;
+}
+.main .headerimage {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+.main h1 {
+  display: flex;
+  margin: 3%;
+  font-family: arial;
+  font-kerning: 10px;
+}
+.main h3 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 3%;
+}
+.main p {
+  display: flex;
+  justify-content: flex-start;
+  margin: 3%;
+  padding: 5% 0% 5% 0%;
 }

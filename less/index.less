@@ -48,6 +48,14 @@ table {
 	border-spacing: 0;
 }
 
+h1 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 18.72px;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -65,8 +73,14 @@ html, body {
 	justify-content: space-around;
 	padding: 2% 10% 2% 10%;
 	font-family: Trebuchet MS;
-	
-	
+
+	img {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 20%;
+	}
+
+	}
 
 	nav {
 		display: flex;
@@ -83,6 +97,36 @@ html, body {
 	}
 }
 
+.main {
+	display: flex;
+	flex-direction: row;
+	margin: 2%;
+	padding: 2%;
+	//border: solid;
+
+	.headerimage {
+		display: flex;
+		justify-content: center;
+		margin: 2%;
+	}
+
+	h1 {
+		display: flex;
+		margin: 3%;
+		font-family: arial;
+		font-kerning: 10px;
+	}
+
+	h3 {
+		display: flex;
+		justify-content: flex-start;
+		margin: 3%;
+	}
+}
+
+.maincontent {
+	border: solid;
+}
 
 
 

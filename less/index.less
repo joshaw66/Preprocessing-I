@@ -61,18 +61,22 @@ h3 {
     box-sizing: border-box;
 }
 
+@mainfontcolor: black;
+@mainbackgroundcolor: lightgrey;
+
 html, body {
 	height: 100%;
 	background-color: white;
 }
 
 .navigation {
-	background-color: lightgrey;
+	background-color: @mainbackgroundcolor;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 2% 10% 2% 10%;
 	font-family: Trebuchet MS;
+	
 
 	img {
 		display: flex;
@@ -80,12 +84,10 @@ html, body {
 		max-width: 20%;
 	}
 
-	}
-
 	nav {
 		display: flex;
 		justify-content: flex-end;
-		border: solid 1px grey;
+		border: grey 1px;
 		padding: 10px;
 		background-color: white;
 		color: grey;
@@ -102,7 +104,7 @@ html, body {
 	flex-direction: row;
 	margin: 2%;
 	padding: 2%;
-	//border: solid;
+	
 
 	.headerimage {
 		display: flex;
@@ -110,24 +112,84 @@ html, body {
 		margin: 2%;
 	}
 
-	h1 {
-		display: flex;
-		margin: 3%;
-		font-family: arial;
-		font-kerning: 10px;
+		.headercontent {
+			h1 {
+				display: flex;
+				margin: 3%;
+				font-family: arial;
+				font-kerning: 10px;
+				color: @mainfontcolor;
+			}
+
+			h3 {
+				display: flex;
+				justify-content: flex-start;
+				margin: 3%;
+				color: @mainfontcolor;
+
+			}
+
+			.maincontent {
+				display: flex;
+				justify-content: center;
+				margin: 3%;
+			}
+
+			.contact-me {
+				display: flex;
+				justify-content: center;
+				border: solid 1px black;
+				background-color: silver;
+				color: black;
+				width: 20%;
+				margin-top: 7%;
+				margin-left: 3%;
+				padding: 7px;
+			}
+		}
+}
+.middlesection{
+	display: flex;
+	flex-direction: row;
+	height: 500px;
+	width: 100%;
+	margin: 0% 4% 0% 4%;
+	padding: 0% 2% 0% 2%;
+
+	.why {
+		padding: 4%;
+		background-color: #C7D8E0;
+		width: 60%;
+
+
+		.whycode {
+			display: flex;
+			justify-content: flex-start;
+			font-family: arial;
+			color: @mainfontcolor;
+			margin: 3%;
+			padding-bottom: 3%;
+		}
 	}
 
-	h3 {
+	.skills {
 		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		width: 40%;
 		justify-content: flex-start;
-		margin: 3%;
+		
+		h3 {
+			padding: 4%;
+			font-weight: bold;
+		}
+
+		p {
+			padding: 4%;
+			
+		}
 	}
 }
-
-.maincontent {
-	border: solid;
-}
-
 
 
 

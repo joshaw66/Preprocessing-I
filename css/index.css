@@ -149,10 +149,15 @@ body {
   padding: 2% 10% 2% 10%;
   font-family: Trebuchet MS;
 }
+.navigation img {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 20%;
+}
 .navigation nav {
   display: flex;
   justify-content: flex-end;
-  border: solid 1px grey;
+  border: grey 1px;
   padding: 10px;
   background-color: white;
   color: grey;
@@ -172,20 +177,67 @@ body {
   justify-content: center;
   margin: 2%;
 }
-.main h1 {
+.main .headercontent h1 {
   display: flex;
   margin: 3%;
   font-family: arial;
   font-kerning: 10px;
+  color: black;
 }
-.main h3 {
+.main .headercontent h3 {
   display: flex;
   justify-content: flex-start;
   margin: 3%;
+  color: black;
 }
-.main p {
+.main .headercontent .maincontent {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+.main .headercontent .contact-me {
+  display: flex;
+  justify-content: center;
+  border: solid 1px black;
+  background-color: silver;
+  color: black;
+  width: 20%;
+  margin-top: 7%;
+  margin-left: 3%;
+  padding: 7px;
+}
+.middlesection {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  width: 100%;
+  margin: 0% 4% 0% 4%;
+  padding: 0% 2% 0% 2%;
+}
+.middlesection .why {
+  padding: 4%;
+  background-color: #C7D8E0;
+  width: 60%;
+}
+.middlesection .why .whycode {
   display: flex;
   justify-content: flex-start;
+  font-family: arial;
+  color: black;
   margin: 3%;
-  padding: 5% 0% 5% 0%;
+  padding-bottom: 3%;
+}
+.middlesection .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 40%;
+  justify-content: flex-start;
+}
+.middlesection .skills h3 {
+  padding: 4%;
+  font-weight: bold;
+}
+.middlesection .skills p {
+  padding: 4%;
 }

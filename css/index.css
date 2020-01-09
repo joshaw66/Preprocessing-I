@@ -136,6 +136,14 @@ h3 {
 * {
   box-sizing: border-box;
 }
+.flexMixin {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainFontMixin {
+  color: black;
+  font-size: 1rem;
+}
 html,
 body {
   height: 100%;
@@ -144,6 +152,7 @@ body {
 .navigation {
   background-color: lightgrey;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   padding: 2% 10% 2% 10%;
@@ -195,6 +204,7 @@ body {
 }
 .main .headerimage {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 2%;
 }
@@ -228,6 +238,10 @@ body {
   margin-left: 3%;
   padding: 10px;
 }
+.main .headercontent .contact-me:hover {
+  background-color: lightblue;
+  color: white;
+}
 .middlesection {
   display: flex;
   flex-direction: row;
@@ -251,31 +265,37 @@ body {
 }
 .middlesection .skills {
   display: flex;
+  flex-wrap: wrap;
+  color: black;
+  font-size: 1rem;
   flex-direction: column;
+  background-color: #81B099;
   align-items: stretch;
   width: 40%;
+  padding: 3%;
   justify-content: flex-start;
+  max-height: 400px;
 }
 .middlesection .skills h3 {
   padding: 4%;
   font-weight: bold;
 }
 .middlesection .skills p {
-  padding: 4%;
+  padding: 2%;
 }
 .experience {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 3%;
-  padding-left: 3%;
-  padding-right: 10%;
-  height: 150px;
+  background-color: lightgrey;
+  padding: 4%;
 }
 @media (max-width: 500px) {
   .experience {
     flex-direction: column;
+    align-items: flex-start;
+    margin-left: 6%;
   }
 }
 .experience div {

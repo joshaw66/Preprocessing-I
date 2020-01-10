@@ -290,11 +290,13 @@ body {
   align-items: center;
   background-color: lightgrey;
   padding: 4%;
+  margin-left: 6%;
+  border: solid 1px;
 }
 @media (max-width: 500px) {
   .experience {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 6%;
   }
 }
@@ -303,9 +305,20 @@ body {
   font-weight: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+@media (max-width: 500px) {
+  .experience div {
+    align-items: center;
+  }
+}
 .experience p {
   padding-top: 6%;
   width: 100%;
   min-width: 200px;
   overflow: hidden;
+  border-bottom: solid 1px grey;
+}
+@media (max-width: 500px) {
+  .experience p {
+    align-items: center;
+  }
 }

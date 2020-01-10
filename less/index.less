@@ -240,19 +240,25 @@ html, body {
 	align-items: center;
 	background-color: lightgrey;
 	padding: 4%;
+	margin-left: 6%;
+	border: solid 1px;
 
 
 	@media (max-width: 500px){
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		margin-left: 6%;
 	}
 	
 	div {
 		min-width: 200px;
 		font-weight: bold;
-		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		//border: solid;
 
+		@media (max-width: 500px){
+			align-items: center;
+		}	
 	}
 
 	p {
@@ -260,5 +266,10 @@ html, body {
 		width: 100%;
 		min-width: 200px;
 		overflow: hidden;
+		border-bottom: solid 1px grey;
+
+		@media (max-width: 500px){
+			align-items: center;
+		}	
 	}
 }
